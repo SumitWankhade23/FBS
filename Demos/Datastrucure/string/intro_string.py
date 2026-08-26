@@ -1,9 +1,12 @@
 #1. ' '," ",''' ''',""" """ 
 str = 'Firstbit solution'
+str1 = "Firstbit Solution"
+str2 = """Firstbit Solution"""
 
 
-
-#2.Set of charachter(alph, numeric,symbolic )
-#3. Orderd
-#4. Immutable
-#5. 
+# Property                  	Description
+# Immutable	    Once created, a string cannot be changed. Any "modification" creates a new string.
+# Ordered	      Characters have a defined index/position.
+# Iterable	    You can loop through each character.
+# Indexed	      Supports positive and negative indexing.
+# Sequencetype	Supports slicing, concatenation, repetition.
