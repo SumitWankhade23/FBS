@@ -1,0 +1,1 @@
+#Write a program to print list after removing even numbers.
