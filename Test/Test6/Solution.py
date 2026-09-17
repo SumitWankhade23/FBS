@@ -1,26 +1,18 @@
 class Vehicle:
-
-    def __init__(self):
+     def __init__(self):
         if type(self) == Vehicle:
             raise TypeError("Vehicle object cannot be created")
-
     def calculate_toll(self):
         print("Calculate toll")
-
-
 class TwoWheeler(Vehicle):
-
     def __init__(self, persons):
         super().__init__()
         self.persons = persons
-
     def calculate_toll(self):
         toll = 20
-
         if self.persons > 2:
             extra_persons = self.persons - 2
             toll = toll + extra_persons * 10
-
         return toll
 
 
@@ -114,6 +106,4 @@ while True:
 
         print("Invalid choice")
         continue
-
-    # Polymorphism
     print("Total Toll =", vehicle.calculate_toll())
