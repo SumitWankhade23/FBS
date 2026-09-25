@@ -1,1 +1,6 @@
+text = "python is easy and python is powerful"
+words = text.split()
+print(words)
 
+#Note - split() is a string method that divides a string into multiple parts based on a separator 
+#       and returns those parts as a list. If no separator is specified, it splits on whitespace. 
