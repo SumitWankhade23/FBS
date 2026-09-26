@@ -5,7 +5,7 @@ def concatenate(dict1,dict2):
         new_dict[a] = b
     return new_dict    
 
-dict1 = {"Name" : "Sumit", "Age": 25, "Height": 5.5}
+dict1 = {"Name" : "Sumit", "Age": 25, "Height": 5.6}
 dict2 = {"Addrees": "Kapustalni", "Roll": 101}
 result = concatenate(dict1,dict2)
 print(result)
