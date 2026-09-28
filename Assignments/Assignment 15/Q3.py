@@ -19,3 +19,6 @@ class Shirt:
 
 s1 = Shirt()
 s1.showbook()
+
+s1 = Shirt(101,"Mufti","Lenin",1500,"L")
+s1.showbook
