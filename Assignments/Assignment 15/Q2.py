@@ -21,8 +21,8 @@ p1.ShowProducts()
 
 
 
-p1 = Product(101,"Cotton",9000,20)
-p1.ShowProducts()
+p2 = Product(101,"Cotton",9000,20)
+p2.ShowProducts()
 
 
         
