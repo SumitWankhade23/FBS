@@ -19,5 +19,5 @@ class Book:
 b1 = Book(101,"Automic Habit",384,"James Clare")
 b1.ShowBook()
 
-b1 = Book()
-b1.ShowBook()
+b2 = Book()
+b2.ShowBook()
