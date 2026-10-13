@@ -10,10 +10,10 @@ def add_book():
         price = float(input("Enter price: "))
         author = input("Enter author: ")
     except ValueError:
-        print("Invalid input. Id must be a whole number and price must be a number.")
+        print("Invalid input Id.")
         return
     books[bid] = StoreBook(bid, name, price, author)
-    print("Book added successfully.")
+    print("Book added successfully")
 
 def delete_book():
     try:
@@ -25,11 +25,11 @@ def delete_book():
         removed = books.pop(bid)
         print(f"Deleted: {removed.name}")
     else:
-        print("Book not found.")
+        print("Book not found")
 
 def display_all():
     if not books:
-        print("No books available.")
+        print("No books available")
         return
     for book in books.values():
         book.display()
@@ -39,7 +39,7 @@ def search_book():
     try:
         bid = int(input("Enter book id to search: "))
     except ValueError:
-        print("Invalid id.")
+        print("Invalid id")
         return
     book = books.get(bid)
     if book:
@@ -68,8 +68,9 @@ def main():
             search_book()
         elif choice == "5":
             print("Than you")
+            break
         else:
-            print("Invalid choice. Please enter 1 to 5.")
+            print("Invalid choice..")
 
 
 if __name__ == "__main__":
