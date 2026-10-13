@@ -4,7 +4,7 @@ def add_book():
     try:
         bid = int(input("Enter book id: "))
         if bid in books:
-            print("A book with this id already exists.")
+            print("A book id already exists")
             return
         name = input("Enter book name: ")
         price = float(input("Enter price: "))
@@ -12,12 +12,12 @@ def add_book():
     except ValueError:
         print("Invalid input Id.")
         return
-    books[bid] = StoreBook(bid, name, price, author)
+    books[bid] = StoreBook(bid,name,price,author)
     print("Book added successfully")
 
 def delete_book():
     try:
-        bid = int(input("Enter book id to delete: "))
+        bid = int(input("Enter book id : "))
     except ValueError:
         print("Invalid id.")
         return
@@ -37,7 +37,7 @@ def display_all():
 
 def search_book():
     try:
-        bid = int(input("Enter book id to search: "))
+        bid = int(input("Enter book id to be search: "))
     except ValueError:
         print("Invalid id")
         return
