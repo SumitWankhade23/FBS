@@ -18,7 +18,5 @@ def check_Armstrong(num):
 
 num = int(input("Enter number: "))
 result = check_Armstrong(num)
-if result:
-    print(f"{num} is Armstrong number")
-else:
-    print(f"{num} is not Armstrong number")        
+print(result)
+        
